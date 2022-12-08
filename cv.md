@@ -1,11 +1,11 @@
 [rsschool-cv](https://rs.school/ "Школа")
 ====
 # **Stanislau Izhohin**
-=====
+
 ## **Contact information:**
 
-    *Phone: +375 33 360 96 98
-    *E-mail: blrjunrs@gmail.com
+    Phone: +375 33 360 96 98
+    E-mail: blrjunrs@gmail.com
 
 ******
 
