@@ -1,5 +1,4 @@
-[rsschool-cv][Тег 1]
-[тег 1][https://rs.school/]
+[rsschool-cv](https://rs.school/ "Школа")
 ====
 #Stanislau Izhohin
 ====
