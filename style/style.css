@@ -58,8 +58,9 @@ main{
 .left_block_image{
 padding: 5px 0 0 2em;
 }
-.left_block_contact, 
-#language{
+#contact, 
+#language,
+#education{
  padding: 3em;
 }
 
