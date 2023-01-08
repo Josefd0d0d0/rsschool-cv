@@ -180,7 +180,11 @@ main{
     filter: blur(2px);
 } */
 
-
+.leafs img{
+    position:absolute;
+    top: -10px;
+    left: -10px;
+}
 .welcome_body{
     max-width: 549px;
     height: 340px;
@@ -286,6 +290,7 @@ main{
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+    font-family: 'Inika', serif;
 }
 
 .service_btn_item:hover{
@@ -441,7 +446,6 @@ main{
     font-size: 14px;
     line-height: 20px;
     color: #717171;
-
 }
 .border:before{
     content: "";
@@ -517,6 +521,7 @@ main{
     letter-spacing: 0em;
     text-align: center;
     color: #E06733;
+    font-family: 'Inika', serif;
 }
 .prices_leafs{
     margin: 0 0 115px 0;
