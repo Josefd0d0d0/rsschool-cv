@@ -4,7 +4,7 @@
 
 ## **Contact information:**
 
-    Phone: +375 33 360 96 97
+    Phone: +375 33 360 96 96
     E-mail: blrjunrs@gmail.com
 
 ******
