@@ -104,6 +104,12 @@ header{
     transition: 0.1s ease-in-out;
     margin: 0 0 -2px 0;
 }
+.nav_list li:nth-child(1){
+    border-bottom: 3px solid #F1CDB3;
+}
+.nav_list li:nth-child(1) a {
+    color: #FAFAFA;
+}
 .not_only{
     width: 1200px;
     margin: 0 auto;
@@ -370,7 +376,8 @@ main{
     font-size: 17px;
     line-height: 52px;
     letter-spacing: 0.06em;
-
+    color: black;
+    
     cursor: pointer;
     transition: 1s;
 }
