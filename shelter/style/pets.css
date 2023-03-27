@@ -58,6 +58,7 @@ header{
     font-size: 32px;
     line-height: 110%;
     color: rgba(84, 84, 84, 1);
+    display: block;
 
     letter-spacing: 0.054em;
     text-align: center;
@@ -130,7 +131,7 @@ main{
 }
 .pets_container{
     display: grid;
-    grid-template: 80px minmax(auto, 90px) 60px auto 60px auto/1fr;
+    grid-template: 80px minmax(auto, 90px) 45px auto 45px auto/1fr;
 }
 .pets_container_title{
     grid-column: 1;
@@ -164,7 +165,8 @@ main{
     margin: 15px 0 15px 0;
 }
 .pets_container_item:hover{
-    box-shadow: 4px  4px 4px 4px black;
+    /* box-shadow: 4px  4px 4px 4px black; */
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     transition: 0.5s ease-in-out;
 }
 .pets_container_item_img{
