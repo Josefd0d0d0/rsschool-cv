@@ -252,12 +252,23 @@ main{
     transition: 0.5s;
 }
 
-.arrow:hover{
+/* .arrow:hover{
+    background: #FDDCC4;
+    transition: 0.5s;
+} */
+
+.pets_container_nav li:nth-child(3):hover{
     background: #FDDCC4;
     transition: 0.5s;
 }
-
-
+.pets_container_nav li:nth-child(4):hover{
+    background: #FDDCC4;
+    transition: 0.5s;
+}
+.pets_container_nav li:nth-child(5):hover{
+    background: #FDDCC4;
+    transition: 0.5s;
+}
 
 .arrow_container_left_two{
     background: url('../assets/img/pets_arrow_left_two.png')0 0/100% auto no-repeat;
