@@ -605,11 +605,9 @@ footer{
     .footer_content_item_container a:nth-child(3){
         margin: 0 ;
     }
-}
 
 
 
-@media (max-width: 650px){
     .header_burger{
         display: flex;
         position: relative;
@@ -661,11 +659,6 @@ footer{
         /* padding: 0 0 0 20px; */
     }
 }
-
-
-
-
-
 
 
 
