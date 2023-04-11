@@ -338,7 +338,7 @@ window.addEventListener("resize", () => {
   updateCards(1);
   maxPages = maxPagess();
   btnActive();
-  PageNumber();
+  twoClickRight()
 });
 
 
@@ -356,7 +356,6 @@ function oneClickLeft() {
         currentPage--;
         updateCards(currentPage);
         PageNumber();
-        btnActive();
     }
 }
 
@@ -382,6 +381,7 @@ function twoClickRight() {
     PageNumber();
     btnActive();
 }
+
 
 function PageNumber(){
   currentPageNumber.innerHTML = currentPage;
