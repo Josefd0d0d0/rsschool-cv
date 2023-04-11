@@ -221,17 +221,7 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
 
 
 
-
-  const rightBtn = document.querySelector('.arrow_right_one');
-  const leftBtn = document.querySelector('.arrow_left_one');
-  const carousel = document.querySelector('.pets_container_items');
-  const currentPageNumber = document.querySelector('.arrow_number');
-  const rightBtnAll = document.querySelector('.arrow_right_two');
-  const leftBtnALL = document.querySelector('.arrow_left_two');
-
-
-
-// function createArray() {
+ // function createArray() {
 //   let result = [];
 //   for (let i = 0; i < 6; i++) {
 //       let subArray = [];
@@ -264,7 +254,12 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
 // });
 
 
-
+  const rightBtn = document.querySelector('.arrow_right_one');
+  const leftBtn = document.querySelector('.arrow_left_one');
+  const carousel = document.querySelector('.pets_container_items');
+  const currentPageNumber = document.querySelector('.arrow_number');
+  const rightBtnAll = document.querySelector('.arrow_right_two');
+  const leftBtnALL = document.querySelector('.arrow_left_two');
 
 function createArray() {
   let result = [];
@@ -327,22 +322,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function maxPagess(){
-  let pages;
   const w = window.innerWidth;
     if (w <= 320) {
-     return pages = 16;
+     return  16;
     } else if (w <= 768) {
-      return pages = 8;
+      return  8;
     } else {
-      return pages = 6;
+      return  6;
     }
 }
 
+
+let maxPages = maxPagess();
 window.addEventListener("resize", () => {
   updateCards(1);
-  maxPagess()
+  maxPages = maxPagess();
+  btnActive();
 });
-const maxPages = maxPagess();
+
 
 
 leftBtn.addEventListener("click", oneClickLeft);
@@ -431,27 +428,53 @@ const modalWindowListItems = modalWindowList.querySelectorAll('span');
 
 
 
-function addEventListenersToButtons() {
-   const petsButton = document.querySelectorAll('.pets_container_item_button');
-     petsButton.forEach(button => {
-         button.addEventListener('click', n => {
-             const whoPet = n.target.previousElementSibling.textContent;
-             const petData = petsFrend[whoPet];
+// function addEventListenersToButtons() {
+//    const petsButton = document.querySelectorAll('.pets_container_item_button');
+//      petsButton.forEach(button => {
+//          button.addEventListener('click', n => {
+//              const whoPet = n.target.previousElementSibling.textContent;
+//              const petData = petsFrend[whoPet];
              
-             modalWindowImg.style.background = `url('${petData.img}') 0 0/auto 100% no-repeat`;
-             modalWindowTitle.textContent = petData.name;
-             modalWindowPhrOne.textContent = petData.type;
-             modalWindowPhrTwo.textContent = petData.description;
-             breedSp.textContent= petData.breed;
+//              modalWindowImg.style.background = `url('${petData.img}') 0 0/auto 100% no-repeat`;
+//              modalWindowTitle.textContent = petData.name;
+//              modalWindowPhrOne.textContent = petData.type;
+//              modalWindowPhrTwo.textContent = petData.description;
+//              breedSp.textContent= petData.breed;
  
-             modalWindowListItems[0].textContent = petData.age;
-             modalWindowListItems[1].textContent = petData.inoculations;
-             modalWindowListItems[2].textContent = petData.diseases;
-             modalWindowListItems[3].textContent = petData.parasites;
+//              modalWindowListItems[0].textContent = petData.age;
+//              modalWindowListItems[1].textContent = petData.inoculations;
+//              modalWindowListItems[2].textContent = petData.diseases;
+//              modalWindowListItems[3].textContent = petData.parasites;
          
-             windowContent.classList.add('window_active');
-             openBackground.classList.add('window_background_active');
-         });
-     });
-   };
-   addEventListenersToButtons();
+//              windowContent.classList.add('window_active');
+//              openBackground.classList.add('window_background_active');
+//          });
+//      });
+//    };
+//    addEventListenersToButtons();
+
+
+function addEventListenersToButtons() {
+  const petsButton = document.querySelectorAll('.pets_container_item');
+    petsButton.forEach(button => {
+        button.addEventListener('click', n => {
+            const whoPet = n.currentTarget.querySelector('.pets_container_item_text').textContent;
+            const petData = petsFrend[whoPet];
+            
+            modalWindowImg.style.background = `url('${petData.img}') 0 0/auto 100% no-repeat`;
+            modalWindowTitle.textContent = petData.name;
+            modalWindowPhrOne.textContent = petData.type;
+            modalWindowPhrTwo.textContent = petData.description;
+            breedSp.textContent= petData.breed;
+
+            modalWindowListItems[0].textContent = petData.age;
+            modalWindowListItems[1].textContent = petData.inoculations;
+            modalWindowListItems[2].textContent = petData.diseases;
+            modalWindowListItems[3].textContent = petData.parasites;
+        
+            windowContent.classList.add('window_active');
+            openBackground.classList.add('window_background_active');
+        });
+    });
+  };
+  addEventListenersToButtons();

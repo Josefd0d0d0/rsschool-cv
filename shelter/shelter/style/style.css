@@ -403,7 +403,7 @@ main{
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-.pets_container_item_button:hover{
+.pets_container_item:hover>.pets_container_item_button{
     background: #FDDCC4;
     transition: 0.5s ease-in-out;
 }

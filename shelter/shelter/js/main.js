@@ -245,10 +245,10 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
     });
 
  function addEventListenersToButtons() {
-  const petsButton = document.querySelectorAll('.pets_container_item_button');
+  const petsButton = document.querySelectorAll('.pets_container_item');
     petsButton.forEach(button => {
         button.addEventListener('click', n => {
-            const whoPet = n.target.previousElementSibling.textContent;
+            const whoPet = n.currentTarget.querySelector('.pets_container_item_text').textContent;
             const petData = petsFrend[whoPet];
             
             modalWindowImg.style.background = `url('${petData.img}') 0 0/auto 100% no-repeat`;
@@ -349,6 +349,7 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
       Template.btn.innerHTML = "Learn more";
       changedItem.appendChild(Template.item);
     }
+
     addEventListenersToButtons();
   
   leftBtn.addEventListener("click", moveLeft);
