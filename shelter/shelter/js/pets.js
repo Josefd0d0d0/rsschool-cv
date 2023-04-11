@@ -426,6 +426,10 @@ const modalWindowListItems = modalWindowList.querySelectorAll('span');
      openBackground.classList.remove('window_background_active');
    });
 
+   openBackground.addEventListener('click', () => {
+    windowContent.classList.remove('window_active');
+    openBackground.classList.remove('window_background_active');
+  });
 
 
 // function addEventListenersToButtons() {

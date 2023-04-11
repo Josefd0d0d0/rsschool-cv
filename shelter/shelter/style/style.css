@@ -565,15 +565,18 @@ main{
     line-height: 114%;
     letter-spacing: 0.06em;
     margin: 0 0 40px 0;
+    word-wrap: break-word;
 }
 .modal_window_content_list ol{
     font-size: 15px;
     line-height: 110%;
     margin: 0 0 11px 14px;
     font-weight: 700;
+    word-wrap: break-word;
 }
 .modal_window_content_list ol span{
     font-weight: 400;
+    word-wrap: break-word;
 }
 ol {
     list-style-type: disc;
@@ -1339,20 +1342,24 @@ footer{
 .modal_window_title{
     text-align: center;
     margin: 0 0 10px 0;
+    width: 220px;
 }
 .modal_window_phr_one_container {
     justify-content: center;
     margin: 0 0 20px 0;
+    width: 220px;
 }
 .modal_window_phr_two{
     text-align: justify;
     margin: 0 0 24px 0;
+    width: 220px;
 }
 .modal_window_content_list ol{
     font-size: 15px;
     line-height: 120%;
     margin: 0 0 4px 14px;
     font-weight: 700;
+    width: 210px;
 }
 .modal_close_button {
     right: -29px;
