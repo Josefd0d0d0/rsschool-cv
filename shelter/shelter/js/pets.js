@@ -338,6 +338,7 @@ window.addEventListener("resize", () => {
   updateCards(1);
   maxPages = maxPagess();
   btnActive();
+  PageNumber();
 });
 
 
@@ -424,11 +425,13 @@ const modalWindowListItems = modalWindowList.querySelectorAll('span');
    closeButton.addEventListener('click', () => {
      windowContent.classList.remove('window_active');
      openBackground.classList.remove('window_background_active');
+     body.classList.remove("overflow_body")
    });
 
    openBackground.addEventListener('click', () => {
     windowContent.classList.remove('window_active');
     openBackground.classList.remove('window_background_active');
+    body.classList.remove("overflow_body")
   });
 
 
@@ -478,6 +481,7 @@ function addEventListenersToButtons() {
         
             windowContent.classList.add('window_active');
             openBackground.classList.add('window_background_active');
+            body.classList.add("overflow_body");
         });
     });
   };
