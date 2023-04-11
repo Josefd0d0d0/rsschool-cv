@@ -237,11 +237,13 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
     closeButton.addEventListener('click', () => {
       windowContent.classList.remove('window_active');
       openBackground.classList.remove('window_background_active');
+      body.classList.remove("overflow_body")
     });
 
     openBackground.addEventListener('click', () => {
       windowContent.classList.remove('window_active');
       openBackground.classList.remove('window_background_active');
+      body.classList.remove("overflow_body")
     });
 
  function addEventListenersToButtons() {
@@ -264,6 +266,7 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
         
             windowContent.classList.add('window_active');
             openBackground.classList.add('window_background_active');
+            body.classList.add("overflow_body");
         });
     });
   };
@@ -357,4 +360,114 @@ document.getElementById("nav_i_3").addEventListener("click", function(){
 });
 
 
+// const generateSequence = () => {
+//   let sequence = [];
+//   let usedIndexes = [];
+//   for (let i = 0; i < 3; i++) {
+//     let block = [];
+//     for (let j = 0; j < 3; j++) {
+//       let randomNum;
+//       do {
+//         randomNum = Math.floor(Math.random() * 8);
+//       } while (block.includes(randomNum) || usedIndexes.includes(randomNum));
+//       block.push(randomNum);
+//     }
+//     sequence.push(...block);
+//     usedIndexes = block;
+//   }
+//   return sequence;
+// }
+// generateSequence();
 
+// let sequence = generateSequence();
+// const wrappers = document.querySelectorAll(".pets_container_item_wrapper");
+// let index = 0;
+// wrappers.forEach((wrapper) => {
+//   const cards = wrapper.querySelectorAll(".pets_container_item");
+//   cards.forEach((card) => {
+//     const img = card.querySelector('.pets_container_item_img');
+//     const text = card.querySelector('.pets_container_item_text');
+//     const button = card.querySelector('.pets_container_item_button');
+//     img.style.background = `url('${petsFriendMassive[sequence[index]].img}') 0 0/auto 100% no-repeat`;
+//     text.innerHTML = petsFriendMassive[sequence[index]].name;
+//     button.innerHTML = "Learn more";
+//     index++;
+//   });
+// });
+
+
+// let rightClicks = 0;
+// let leftClicks = 0;
+
+// const updateSequence = () => {
+//   sequence = generateSequence();
+//   let index = 0;
+//   wrappers.forEach((wrapper) => {
+//     const cards = wrapper.querySelectorAll(".pets_container_item");
+//     cards.forEach((card) => {
+//       const img = card.querySelector('.pets_container_item_img');
+//       const text = card.querySelector('.pets_container_item_text');
+//       const button = card.querySelector('.pets_container_item_button');
+//       img.style.background = `url('${petsFriendMassive[sequence[index]].img}') 0 0/auto 100% no-repeat`;
+//       text.innerHTML = petsFriendMassive[sequence[index]].name;
+//       button.innerHTML = "Learn more";
+//       index++;
+//     });
+//   });}
+
+
+
+
+
+// rightBtn.addEventListener('click', () => {
+//   moveRight();
+//   rightClicks++;
+//   if (rightClicks > 1) {
+//     updateSequence();
+//     rightClicks = 0;
+//   }
+// });
+
+// leftBtn.addEventListener('click', () => {
+//   moveLeft();
+//   leftClicks++;
+//   if (leftClicks > 1) {
+//     updateSequence();
+//     leftClicks = 0;
+//   }
+// });
+
+
+// const moveLeft = () => {
+//   carousel.classList.add("transition-left");
+//   // leftBtn.removeEventListener("click", moveLeft);
+//   // rightBtn.removeEventListener("click", moveRight);
+// };
+
+// const moveRight = () => {
+//   carousel.classList.add("transition-right");
+//   // leftBtn.removeEventListener("click", moveLeft);
+//   // rightBtn.removeEventListener("click", moveRight);
+// };
+
+// const carousel = document.querySelector('#carousel');
+//   carousel.addEventListener("animationend", (animationEvent) => {
+//     let changedItem;
+//     if (animationEvent.animationName === "move-left") {
+//       carousel.classList.remove("transition-left");
+//       changedItem = leftItem;
+//       document.querySelector("#item_active").innerHTML = leftItem.innerHTML;
+//     } else {
+//       carousel.classList.remove("transition-right");
+//       changedItem = rightItem;
+//       document.querySelector("#item_active").innerHTML = rightItem.innerHTML;
+//     }
+//     changedItem.innerHTML = "";
+//   });
+
+
+
+
+
+
+    
