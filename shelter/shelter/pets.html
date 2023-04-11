@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="Image/x-icon" href="./assets/svg/dog.svg" rel="icon">
     <link rel="stylesheet" href="style/pets.css">
+    <script defer src="js/pets.js"></script>
     <title>Shelter</title>
 </head>
 <body>
     <div class="wrapper">
+        <div id="header_background_burger"></div>
         <header>
             <div class="nav_container">
                     <div class="nav_content">
@@ -35,75 +37,97 @@
             <div class="Our_Friends" id="Our_Friends">
                 <div class="pets_container">
                     <h1 class="pets_container_title">Our friends who<br>are looking for a house</h1>
-                    <div class="pets_container_items">
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_one"></div>
-                            <p class="pets_container_item_text">Katrine</p>
-                            <div class="pets_container_item_button">Learn more</div>
+                    <div class="pets_container_wrapper" id="item_active">
+                        <div class="pets_container_items">
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_one"></div>
+                                <p class="pets_container_item_text">Katrine</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_two"></div>
+                                <p class="pets_container_item_text">Jennifer</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_three"></div>
+                                <p class="pets_container_item_text">Woody</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_four"></div>
+                                <p class="pets_container_item_text">Sophia</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_five"></div>
+                                <p class="pets_container_item_text">Timmy</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_six"></div>
+                                <p class="pets_container_item_text">Charly</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_seven"></div>
+                                <p class="pets_container_item_text">Scarlett</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                            <div class="pets_container_item">
+                                <div class="pets_container_item_img pets_img_eight"></div>
+                                <p class="pets_container_item_text">Freddie</p>
+                                <div class="pets_container_item_button">Learn more</div>
+                            </div>
+                        </div> 
+                    </div>
+                <div class="pets_container_nav_wrapper">
+                    <ul class="pets_container_nav">
+                        <li class="arrow arrow_left_two"><i class="left"></i><i class="left"></i></li>
+                        <li class="arrow arrow_left_one"><i class="left"></i></li>
+                        <li class="arrow arrow_number"><div class="arrow_container_number">1</div></li>
+                        <li class="arrow arrow_right_one"><i class="right"></i></li>
+                        <li class="arrow arrow_right_two"><i class="right"></i><i class="right"></i></li>
+                    </ul>
+                </div>
+                <div class="pets_container_modal_window">
+                    <div class="modal_window_container">
+                        <div class="modal_close_button">
+                            <div class="modal_close_button_img"></div>
                         </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_two"></div>
-                            <p class="pets_container_item_text">Jennifer</p>
-                            <div class="pets_container_item_button">Learn more</div>
+                        <div class="modal_window_img"></div>
+                        <div class="modal_window_content">
+                            <h2 class="modal_window_title"></h2>
+                            <div class="modal_window_phr_one_container"><div class="modal_window_phr_one"></div>&nbsp;-&nbsp;<div class="breed"></div></div>
+                            <p class="modal_window_phr_two"></p>
+                            <ul class="modal_window_content_list">
+                                <ol>Age:&nbsp;<span></span></ol>
+                                <ol>Inoculations:&nbsp;<span></span></ol>
+                                <ol>Diseases:&nbsp;<span></span></ol>
+                                <ol>Parasites:&nbsp;<span></span></ol>
+                            </ul>
                         </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_three"></div>
-                            <p class="pets_container_item_text">Woody</p>
-                            <div class="pets_container_item_button">Learn more</div>
-                        </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_four"></div>
-                            <p class="pets_container_item_text">Sophia</p>
-                            <div class="pets_container_item_button">Learn more</div>
-                        </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_five"></div>
-                            <p class="pets_container_item_text">Timmy</p>
-                            <div class="pets_container_item_button">Learn more</div>
-                        </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_six"></div>
-                            <p class="pets_container_item_text">Charly</p>
-                            <div class="pets_container_item_button">Learn more</div>
-                        </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_seven"></div>
-                            <p class="pets_container_item_text">Scarlett</p>
-                            <div class="pets_container_item_button">Learn more</div>
-                        </div>
-                        <div class="pets_container_item">
-                            <div class="pets_container_item_img pets_img_eight"></div>
-                            <p class="pets_container_item_text">Freddie</p>
-                            <div class="pets_container_item_button">Learn more</div>
-                        </div>
-                </div> 
-                <ul class="pets_container_nav">
-                    <li class="arrow"><div class="arrow_container_left_two arrow_img"></div></li>
-                    <li class="arrow"><div class="arrow_container_left arrow_img"></div></li>
-                    <li class="arrow"><div class="arrow_container_number arrow_img">1</div></li>
-                    <li class="arrow"><div class="arrow_container_right arrow_img"></div></li>
-                    <li class="arrow"><div class="arrow_container_right_two arrow_img"></div></li>
-                </ul>
+                    </div>
+                </div>
+                <div class="background_window_open"></div>
                 </div>
             </div>
         </main>
         <footer>
             <div id="Contacts" class="footer_container">
                 <div class="footer_content">
-                    <div class="footer_content_contacts_wrapper">
-                    <div class="footer_content_contact">
-                        <h2 class="footer_content_title">For questions and suggestions</h2>
-                        <a href="mailto:email@shelter.com" class="footer_content_item"><div class="mail f_img"></div><p>email@shelter.com</p></a>
-                        <a href="tel:+136745677554" class="footer_content_item"><div class="tel f_img"></div><p>+13 674 567 75 54</p></a>
-                    </div>
-                    </div>
-                    <div class="footer_content_location_wrapper">
-                    <div class="footer_content_location">
-                        <h2 class="footer_content_title">We are waiting for your visit</h2>
-                        <a href="https://goo.gl/maps/7Gbt8Hq9d1DGNPes6" class="footer_content_item"><div class="pin f_img"></div><p>1 Central Street, Boston (entrance from the store)</p></a>
-                        <a href="https://goo.gl/maps/A8BhHs5uGihDAUvSA" class="footer_content_item"><div class="pin f_img"></div><p>18 South Park, London</p></a>
-                    </div>
-                    </div>
+                        <div class="footer_content_items">
+                            <div class="footer_content_item_container contacts">
+                                <h2 class="footer_content_title">For questions and suggestions</h2>
+                                <a href="mailto:email@shelter.com" class="footer_content_item"><div class="mail footer_icon"></div><p>email@shelter.com</p></a>
+                                <a href="tel:+136745677554" class="footer_content_item"><div class="tel footer_icon"></div><p>+13 674 567 75 54</p></a>
+                            </div>
+                            <div class="footer_content_item_container locations">
+                                <h2 class="footer_content_title">We are waiting for your visit</h2>
+                                <a href="https://goo.gl/maps/7Gbt8Hq9d1DGNPes6" class="footer_content_item"><div class="pin footer_icon"></div><p>1 Central Street, Boston (entrance from the store)</p></a>
+                                <a href="https://goo.gl/maps/A8BhHs5uGihDAUvSA" class="footer_content_item"><div class="pin footer_icon"></div><p>18 South Park, London</p></a>
+                            </div>
+                        </div>
                     <div class="footer_img"></div>
                 </div>
             </div>
