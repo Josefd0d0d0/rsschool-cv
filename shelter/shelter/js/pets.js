@@ -338,7 +338,7 @@ window.addEventListener("resize", () => {
   updateCards(1);
   maxPages = maxPagess();
   btnActive();
-  twoClickRight()
+  twoClickRight();
 });
 
 
