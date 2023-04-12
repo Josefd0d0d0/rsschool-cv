@@ -196,7 +196,11 @@ document.addEventListener("DOMContentLoaded", function(){
      burgerHeader.classList.remove("use_background_header");}
     })
  })
-
+ burgerHeader.addEventListener("click", function(){
+  document.querySelector("header").classList.remove("open")
+  burgerHeader.classList.remove("use_background_header");
+  body.classList.remove("overflow_body");
+ })
  document.getElementById("nav_i_1").addEventListener("click", function(){
   document.querySelector("header").classList.remove("open")
   burgerHeader.classList.remove("use_background_header");
