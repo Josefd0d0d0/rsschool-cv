@@ -18,6 +18,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 html{
     scroll-behavior: smooth;
 }
+
+.overflow_body{
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
 .wrapper{
     width: 100%;
     /* display: grid;
@@ -742,11 +747,6 @@ footer{
         z-index: 1;
         transition: all 1s;
     }
-    .overflow_body{
-        overflow-x: hidden;
-        overflow-y: hidden; 
-    }
-
 
     .header_burger{
         position: relative;
